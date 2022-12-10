@@ -4,6 +4,11 @@ Content-Type: application/json
 
 {
     "email": "asd@asd.asd",
-    "password": "asd",
-    "asd":"asd"
+    "passwordasdas": "asd"
 }
+
+### Find a Perticular user with given ID
+GET http://localhost:3000/auth/1
+
+### Find all users with given email address
+GET http://localhost:3000/auth?email=asd@asd.asd
