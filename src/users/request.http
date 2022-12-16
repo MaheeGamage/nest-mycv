@@ -3,7 +3,16 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-  "email": "asdf@asdf.com",
+  "email": "asdf@asdf5.com",
+  "password": "asdlfkajsd"
+}
+
+### Signin a user
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+  "email": "asdf@asdf5.com",
   "password": "asdlfkajsd"
 }
 
@@ -11,7 +20,7 @@ content-type: application/json
 GET http://localhost:3000/auth/1
 
 ### Find all users with a given email
-GET http://localhost:3000/auth?email=asd@asd.asd
+GET http://localhost:3000/auth?email=asdf@asdf2.com
 
 ### Delete a user given id
 DELETE http://localhost:3000/auth/2
