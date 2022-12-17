@@ -3,18 +3,24 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-  "email": "asdf@asdf5.com",
-  "password": "asdlfkajsd"
+  "email": "a@a.aa",
+  "password": "a"
 }
 
-### Signin a user
+### Signin as an existing user
 POST http://localhost:3000/auth/signin
 content-type: application/json
 
 {
-  "email": "asdf@asdf5.com",
-  "password": "asdlfkajsd"
+  "email": "a@a.aa",
+  "password": "a"
 }
+
+### get currently signed in user
+GET http://localhost:3000/auth/whoami
+
+### signout the user
+POST http://localhost:3000/auth/signout
 
 ### Find a particular user with a given ID
 GET http://localhost:3000/auth/1
@@ -32,3 +38,9 @@ content-type: application/json
 {
   "password": "aaaaa"
 }
+
+### Set a color
+GET http://localhost:3000/auth/colors/red
+
+### Get the color
+GET http://localhost:3000/auth/colors
